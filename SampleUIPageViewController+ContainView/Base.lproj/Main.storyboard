@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye6-It-KUW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="msK-xZ-wIs" kind="embed" id="LbS-mG-6f4"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ye6-It-KUW" secondAttribute="bottom" id="BUT-qf-ke9"/>
+                            <constraint firstItem="ye6-It-KUW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="COJ-3m-ecb"/>
+                            <constraint firstAttribute="trailing" secondItem="ye6-It-KUW" secondAttribute="trailing" constant="360" id="H6l-9J-SG2"/>
+                            <constraint firstAttribute="trailing" secondItem="ye6-It-KUW" secondAttribute="trailing" id="His-vO-OqN"/>
+                            <constraint firstItem="ye6-It-KUW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K0o-AF-gZ9"/>
+                            <constraint firstItem="ye6-It-KUW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XSV-ao-e0I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ye6-It-KUW" secondAttribute="bottom" id="elg-K8-xlx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ye6-It-KUW" secondAttribute="bottom" constant="472" id="su9-fJ-aHf"/>
+                            <constraint firstItem="ye6-It-KUW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uWq-bl-FUQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="COJ-3m-ecb"/>
+                                <exclude reference="H6l-9J-SG2"/>
+                                <exclude reference="uWq-bl-FUQ"/>
+                                <exclude reference="elg-K8-xlx"/>
+                                <exclude reference="su9-fJ-aHf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="-645"/>
+        </scene>
+        <!--BaseUI Page View Controller-->
+        <scene sceneID="wKc-nM-R1D">
+            <objects>
+                <pageViewController storyboardIdentifier="BasePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="msK-xZ-wIs" customClass="BaseUIPageViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6VX-2h-zkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="-637"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="Yja-7C-9go">
+            <objects>
+                <viewController storyboardIdentifier="HomePageViewController" id="DiE-Ut-UwX" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qes-QQ-T5Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="sR1-hM-xg3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wNJ-dG-g3q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz5-nf-foa">
+                                <rect key="frame" x="234" y="270" width="132" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.67450980390000004" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qz5-nf-foa" firstAttribute="centerX" secondItem="wNJ-dG-g3q" secondAttribute="centerX" id="VfT-rE-TBA"/>
+                            <constraint firstItem="Qz5-nf-foa" firstAttribute="centerY" secondItem="wNJ-dG-g3q" secondAttribute="centerY" id="gyh-lD-WO5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytz-PG-igj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="-637"/>
+        </scene>
+        <!--News Feed Page View Controller-->
+        <scene sceneID="imX-BP-Rjh">
+            <objects>
+                <viewController storyboardIdentifier="NewsFeedPageViewController" id="sYf-Sy-Y0j" customClass="NewsFeedPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ti2-GE-rEw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZL4-SV-JSZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3RS-W2-o7C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGR-0L-DUf">
+                                <rect key="frame" x="226" y="282" width="148.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.20392156859999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GGR-0L-DUf" firstAttribute="centerY" secondItem="3RS-W2-o7C" secondAttribute="centerY" id="9pU-LM-dUR"/>
+                            <constraint firstItem="GGR-0L-DUf" firstAttribute="centerX" secondItem="3RS-W2-o7C" secondAttribute="centerX" id="OfE-wn-A1O"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cgf-tD-0VF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="82"/>
+        </scene>
+    </scenes>
+</document>
