@@ -18,8 +18,6 @@
 @implementation BaseUIPageViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    
     HomePageViewController *p1 = [self.storyboard
                             instantiateViewControllerWithIdentifier:@"HomePageViewController"];
     NewsFeedPageViewController *p2 = [self.storyboard
